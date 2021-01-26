@@ -1,5 +1,5 @@
-const form = document.querySelector("form");
-const table = document.querySelector("tbody");
+const form = document.querySelector("#form");
+const table = document.querySelector("#newTr");
 const addBtn = document.querySelector("#add");
 const data = [];
 
@@ -23,10 +23,10 @@ function getSum() {
   sum.innerHTML = `${data.length}`;
 }
 
-// function getSalary() {
-//   let bill = document.querySelector("bill");
-//   bill.innerHTML = `${data.reduce(salary)}`;
-// }
+function getSalary() {
+  let bill = document.querySelector("bill");
+  bill.innerHTML = `${data.reduce([salary])}`;
+}
 
 addBtn.addEventListener("click", (event) => {
   event.preventDefault();
@@ -64,4 +64,5 @@ delBtn.addEventListener("click", (event) => {
   event.preventDefault();
 
   delWorker()
+  addWorker()
 });
