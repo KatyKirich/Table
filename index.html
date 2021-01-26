@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="center">
     <form>
       <input id="name" type="text" placeholder="Имя" autofocus />
       <input id="birth" type="text" placeholder="Год в цифрах" autofocus />
@@ -18,8 +19,8 @@
     </form>
     <br />
     <br />
-    <p>Колличество сотрудников:</p>
-    <p>Сумма $:</p>
+    <p>Колличество сотрудников: <span id="sum"></span></p>
+    <p>Сумма $:<span id="bill"></span></p>
     <table>
       <tr>
         <th></th>
@@ -28,10 +29,12 @@
         <th>Дата приема на работу</th>
         <th>$</th>
       </tr>
+    <tbody></tbody>
     </table>
     <br />
-    <button>Уволить</button>
-    <button>Сумма $</button>
+    <button id="del">Уволить</button>
+    <button id="allSalary">Сумма $</button>
+  </div>
     <script src="index.js"></script>
   </body>
 </html>
