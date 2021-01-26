@@ -28,6 +28,16 @@ function getSalary() {
   bill.innerHTML = `${data.reduce([salary])}`;
 }
 
+function getSum() {
+  let sum = document.querySelector("#sum");
+  sum.innerHTML = `${data.length}`;
+}
+
+// function getSalary() {
+//   let bill = document.querySelector("bill");
+//   bill.innerHTML = `${data.reduce(salary)}`;
+// }
+
 addBtn.addEventListener("click", (event) => {
   event.preventDefault();
 
